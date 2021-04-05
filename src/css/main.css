@@ -1,0 +1,10 @@
+.list-movies--wrapper{
+}
+
+.list-movies-item--image{
+  width: 150px;
+}
+
+.list-view--button-go-github{
+  @include button-variant('red', 'white');
+}

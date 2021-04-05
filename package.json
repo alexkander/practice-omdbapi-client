@@ -1,0 +1,24 @@
+{
+  "name": "practice-openimdb",
+  "version": "1.0.0",
+  "description": "Practica para probar la api de openimdb",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexkander/practice-openimdb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexkander/practice-openimdb/issues"
+  },
+  "homepage": "https://github.com/alexkander/practice-openimdb#readme",
+  "devDependencies": {
+    "serve": "^11.3.2"
+  }
+}
