@@ -1,23 +1,27 @@
 {
-  "name": "practice-openimdb",
+  "name": "practice-omdbapi-client",
   "version": "1.0.0",
-  "description": "Practica para probar la api de openimdb",
-  "main": "index.js",
+  "description": "Practice with OMDb API for create a client",
+  "main": "src/index.js",
   "scripts": {
     "start": "serve src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexkander/practice-openimdb.git"
+    "url": "git+https://github.com/alexkander/practice-omdbapi-client.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Alexander Rondon",
+    "email": "arondn2@gmail.com",
+    "url": "https://github.com/alexkander"
+  },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alexkander/practice-openimdb/issues"
+    "url": "https://github.com/alexkander/practice-omdbapi-client/issues"
   },
-  "homepage": "https://github.com/alexkander/practice-openimdb#readme",
+  "homepage": "https://github.com/alexkander/practice-omdbapi-client#readme",
   "devDependencies": {
     "serve": "^11.3.2"
   }

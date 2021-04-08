@@ -1,4 +1,4 @@
-import openimdbApi from "../../services/openimdb-service.js";
+import omdbApi from "../../services/omdb-api.service.js";
 import appHeader from "../components//app-header/app-header.js";
 import listMovies from "./components/list-movies.js";
 
@@ -18,7 +18,7 @@ export default () => {
   wrapperElement.appendChild(appHeader());
   wrapperElement.appendChild(pageElement);
 
-  openimdbApi.searchMovies(searchText)
+  omdbApi.searchMovies(searchText)
   .then((data) => {
     pageElement.appendChild(listMovies(data.Search));
   })

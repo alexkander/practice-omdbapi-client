@@ -2,12 +2,12 @@ export default () => {
   const template = `
     <div class="app-container app-header--container">
       <div class="app-header--app-name">
-        Open IMDB Client
+        OMDb API Client
       </div>
       <div>
         <a
         class="app--link"
-        href="https://github.com/alexkander/practice-openimdb"
+        href="https://github.com/alexkander/practice-omdbapi-client"
         target="_blank"
         >Go github</a>
       </div>
