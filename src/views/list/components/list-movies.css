@@ -1,0 +1,9 @@
+.list-movies--wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.list-movies-item--wrapper{
+  padding: .5rem
+}

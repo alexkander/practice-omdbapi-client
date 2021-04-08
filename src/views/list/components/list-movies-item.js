@@ -1,4 +1,7 @@
 export default (dataMovie) => {
+  if (dataMovie.Poster === 'N/A') {
+    dataMovie.Poster = 'assets/imgs/no-image-available.jpg'
+  }
   const template = `
   <div class="card" style="width: 18rem;">
     <img src="${dataMovie.Poster}" class="card-img-top" alt="...">
@@ -11,7 +14,7 @@ export default (dataMovie) => {
   </div>
   `
   const wrapperElement = document.createElement('div');
-  wrapperElement.classList.add('list-movies-item--wrapper', 'col')
+  wrapperElement.classList.add('list-movies-item--wrapper')
   wrapperElement.innerHTML = template;
   return wrapperElement;
 }

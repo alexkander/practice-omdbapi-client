@@ -1,5 +1,5 @@
-import detailView from "./detail/detail-view.js";
-import listView from "./list/list-view.js";
+import detailView from "./views/detail/detail-view.js";
+import listView from "./views/list/list-view.js";
 
 const routeView = () => {
   const urlpParams = new URLSearchParams(window.location.search);

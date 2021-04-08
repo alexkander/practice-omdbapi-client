@@ -1,0 +1,17 @@
+.app-header--wrapper{
+  background-color: var(--primary-color);
+  color: var(--primary-color-text);
+  box-shadow: 0 .125rem .25rem var(--shadow-color);
+}
+
+.app-header--container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+  min-height: 4rem;
+}
+
+.app-header--app-name{
+  font-size: 2rem;
+}

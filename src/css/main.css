@@ -1,10 +1,59 @@
-.list-movies--wrapper{
+:root{
+  --text-color: #131516;
+  --button-hover-color: #dfdfdf;
+  --primary-color-50: #E8EAF6;
+  --primary-color-100: #C5CAE9;
+  --primary-color-200: #9FA8DA;
+  --primary-color-300: #7986CB;
+  --primary-color-400: #5C6BC0;
+  --primary-color-500: #3F51B5;
+  --primary-color-600: #3949AB;
+  --primary-color-700: #303F9F;
+  --primary-color-800: #283593;
+  --primary-color-900: #1A237E;
+  --primary-color-A100: #8C9EFF;
+  --primary-color-A200: #536DFE;
+  --primary-color-A400: #3D5AFE;
+  --primary-color-A700: #304FFE;
+  --primary-color: var(--primary-color-500);
+  --primary-color-text: #fff;
+  --shadow-color: rgba(0,0,0,.45);
 }
 
-.list-movies-item--image{
-  width: 150px;
+body{
+  line-height: 1;
+  font-size: 15px;
+  color: var(--text-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.list-view--button-go-github{
-  @include button-variant('red', 'white');
+.app--link{
+  color: inherit;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.app--link:hover{
+  text-decoration: underline;
+}
+
+.app--button{
+  padding: 0.4rem 0.8rem;
+  border-radius: 3px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.app--button:hover{
+  background-color: var(--button-hover-color);
+}
+
+.app--button-border{
+  border: 1px solid var(--text-color);
+}
+
+.app-container{
+  margin: 0 auto;
+  max-width: 1320px;
 }
