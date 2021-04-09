@@ -2,6 +2,7 @@
 @import './css/main.css';
 @import './views/components/app-header/app-header.css';
 @import './views/list/list-view.css';
+@import './views/list/list-subheader/list-subheader.css';
 @import './views/list/list-movies/list-movies.css';
 @import './views/list/main-search/main-search.css';
 @import './views/list/input-search/input-search.css';

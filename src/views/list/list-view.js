@@ -2,6 +2,7 @@ import omdbApi from "../../services/omdb-api.service.js";
 import appHeader from "../components//app-header/app-header.js";
 import listMovies from "./list-movies/list-movies.js";
 import mainSearch from "./main-search/main-search.js";
+import listSubheader from './list-subheader/list-subheader.js';
 
 export default () => {
   const urlpParams = new URLSearchParams(window.location.search);
@@ -19,8 +20,12 @@ export default () => {
   if(!searchText) {
     pageElement.appendChild(mainSearch());
   } else {
+    pageElement.appendChild(listSubheader());
     omdbApi.searchMovies(searchText)
     .then((data) => {
+      const evt = new Event('movies.loaded');
+      evt.data = data;
+      document.dispatchEvent(evt)
       pageElement.appendChild(listMovies(data.Search));
     })
     .catch((err) => {
