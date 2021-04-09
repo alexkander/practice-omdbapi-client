@@ -1,14 +1,14 @@
 export default () => {
   const template = `
     <div class="app-container app-header--container">
-      <div class="app-header--app-name">
+      <a class="app-header--app-name app-link" href="/" title="Go to home">
         OMDb API Client
-      </div>
+      </a>
       <div>
         <a
-        class="app--link"
-        href="https://github.com/alexkander/practice-omdbapi-client"
-        target="_blank"
+          class="app-link"
+          href="https://github.com/alexkander/practice-omdbapi-client"
+          target="_blank"
         >Go github</a>
       </div>
     </div>

@@ -13,14 +13,16 @@
   --primary-color-A200: #536DFE;
   --primary-color-A400: #3D5AFE;
   --primary-color-A700: #304FFE;
-  --primary-color: var(--primary-color-500);
   --primary-color-text: #fff;
 
-  --button-hover-color: #dfdfdf;
+  --primary-color: var(--primary-color-500);
   --shadow-color: rgba(0,0,0,.45);
   --text-color: #131516;
   --secondary-text-color: #787878;
   --secondary-bg-color: #efefef;
+
+  --app-header--height: 4rem;
+  --app-button--hover-color: #dfdfdf;
 }
 
 body{
@@ -30,29 +32,29 @@ body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.app--link{
+.app-link{
   color: inherit;
-  padding: 0.4rem 0.8rem;
+  /* padding: 0.4rem 0.8rem; */
   text-decoration: none;
   display: inline-block;
 }
 
-.app--link:hover{
+.app-link:hover{
   text-decoration: underline;
 }
 
-.app--button{
+.app-button{
   padding: 0.4rem 0.8rem;
   border-radius: 3px;
   text-decoration: none;
   display: inline-block;
 }
 
-.app--button:hover{
-  background-color: var(--button-hover-color);
+.app-button:hover{
+  background-color: var(--app-button--hover-color);
 }
 
-.app--button-border{
+.app-button-border{
   border: 1px solid var(--text-color);
 }
 

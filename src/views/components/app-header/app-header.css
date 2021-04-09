@@ -1,7 +1,11 @@
 .app-header--wrapper{
+  position: absolute;
+  width: 100%;
+  height: var(--app-header--height);
   background-color: var(--primary-color);
   color: var(--primary-color-text);
   box-shadow: 0.05rem 0.05rem 0.3rem var(--shadow-color);
+  z-index: 1;
 }
 
 .app-header--container{
@@ -14,4 +18,8 @@
 
 .app-header--app-name{
   font-size: 2rem;
+}
+
+.app-header--app-name:hover{
+  text-decoration: none;
 }

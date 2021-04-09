@@ -13,6 +13,7 @@ const routeView = () => {
 const render = () => {
   const mainContainerElement = document.querySelector('.main-container');
   mainContainerElement.appendChild(routeView());
+  document.dispatchEvent(new Event('ready'));
 }
 
-window.onload = render;
+window.addEventListener('load', render);

@@ -2,6 +2,10 @@
   display: flex;
   justify-content: stretch;
   flex-wrap: wrap;
+  /* equal to padding in .list-movies-item--wrapper*/
+  margin-right: -1rem;
+  margin-left: -1rem;
+  padding-top: 2rem;
 }
 
 .list-movies-item--wrapper{
@@ -10,14 +14,13 @@
 }
 
 .list-movies-item--card{
-  /* border: 1px solid var(--text-color); */
   box-shadow: 0.05rem 0.05rem 0.3rem var(--shadow-color);
   border-radius: 0.3rem;
   overflow: hidden;
 }
 
 .list-movies-item--poster{
-  padding-top: 133.34%; /* Aspect ratio 3/4 */
+  padding-top: 133.34%; /* Aspect ratio 4/3 */
 }
 
 .list-movies-item--info{
