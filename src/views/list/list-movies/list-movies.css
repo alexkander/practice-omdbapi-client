@@ -20,7 +20,23 @@
 }
 
 .list-movies-item--poster{
-  padding-top: 133.34%; /* Aspect ratio 4/3 */
+  padding-top: 150%; /* Aspect ratio 4/3 */
+  position: relative;
+}
+
+.list-movies-item--no-poster{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bfbfbf;
+  color: var(--secondary-bg-color);
+  font-size: 10rem;
+  text-shadow: 1px 1px 1px #8f8f8f;
 }
 
 .list-movies-item--info{
