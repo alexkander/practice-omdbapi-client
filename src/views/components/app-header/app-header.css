@@ -23,3 +23,13 @@
 .app-header--app-name:hover{
   text-decoration: none;
 }
+
+.app-header--github-link{
+  display: flex;
+  align-items: center;
+}
+
+.app-header--github-icon{
+  font-size: 1.2rem;
+  padding-right: 0.4rem;
+}

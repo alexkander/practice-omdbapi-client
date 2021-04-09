@@ -6,10 +6,13 @@ export default () => {
       </a>
       <div>
         <a
-          class="app-link"
+          class="app-header--github-link app-link"
           href="https://github.com/alexkander/practice-omdbapi-client"
           target="_blank"
-        >Go github</a>
+        >
+          <i class="app-header--github-icon fab fa-github"></i>
+          <span>Go github</span>
+        </a>
       </div>
     </div>
   `
