@@ -3,13 +3,14 @@ export default (dataMovie) => {
     dataMovie.Poster = 'assets/imgs/no-image-available.jpg'
   }
   const template = `
-  <div class="card" style="width: 18rem;">
-    <img src="${dataMovie.Poster}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">${dataMovie.Title}</h5>
-      <p class="card-text">${dataMovie.Year}</p>
-      <p class="card-text">${dataMovie.Type}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+  <div class="list-movies-item--card" title="${dataMovie.Title} (${dataMovie.Year})">
+    <div class="app-image-background list-movies-item--poster" style="background-image: url(${dataMovie.Poster})"></div>
+    <div class="list-movies-item--info">
+      <div class="list-movies-item--info-line">
+        <h5 class="list-movies-item--info-title app-ellipsis">${dataMovie.Title}</h5>
+        <p class="list-movies-item--info-year">${dataMovie.Year}</p>
+      </div>
+      <p class="list-movies-item--info-type">${dataMovie.Type}</p>
     </div>
   </div>
   `

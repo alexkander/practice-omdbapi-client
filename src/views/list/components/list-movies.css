@@ -1,9 +1,44 @@
 .list-movies--wrapper{
   display: flex;
-  justify-content: space-between;
+  justify-content: stretch;
   flex-wrap: wrap;
 }
 
 .list-movies-item--wrapper{
-  padding: .5rem
+  padding: 1rem;
+  width: 25%;
+}
+
+.list-movies-item--card{
+  /* border: 1px solid var(--text-color); */
+  box-shadow: 0.05rem 0.05rem 0.3rem var(--shadow-color);
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.list-movies-item--poster{
+  padding-top: 133.34%; /* Aspect ratio 3/4 */
+}
+
+.list-movies-item--info{
+  padding: 0.8rem 1rem;
+  background-color: var(--secondary-bg-color);
+}
+
+.list-movies-item--info-line{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+
+.list-movies-item--info-title{
+  font-weight: bold;
+}
+
+.list-movies-item--info-year{
+  padding-left: 0.5rem;
+}
+
+.list-movies-item--info-type{
+  color: var(--secondary-text-color)
 }

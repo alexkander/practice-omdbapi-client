@@ -1,6 +1,4 @@
 :root{
-  --text-color: #131516;
-  --button-hover-color: #dfdfdf;
   --primary-color-50: #E8EAF6;
   --primary-color-100: #C5CAE9;
   --primary-color-200: #9FA8DA;
@@ -17,7 +15,12 @@
   --primary-color-A700: #304FFE;
   --primary-color: var(--primary-color-500);
   --primary-color-text: #fff;
+
+  --button-hover-color: #dfdfdf;
   --shadow-color: rgba(0,0,0,.45);
+  --text-color: #131516;
+  --secondary-text-color: #787878;
+  --secondary-bg-color: #efefef;
 }
 
 body{
@@ -56,4 +59,15 @@ body{
 .app-container{
   margin: 0 auto;
   max-width: 1320px;
+}
+
+.app-image-background{
+  background-size: cover;
+  background-position: center;
+}
+
+.app-ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
