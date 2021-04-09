@@ -1,6 +1,6 @@
 import omdbApi from "../../services/omdb-api.service.js";
 import appHeader from "../components//app-header/app-header.js";
-import listMovies from "./components/list-movies.js";
+import listMovies from "./list-movies/list-movies.js";
 
 export default () => {
   const urlpParams = new URLSearchParams(window.location.search);
