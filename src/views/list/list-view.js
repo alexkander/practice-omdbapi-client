@@ -1,5 +1,5 @@
 import omdbApi from "../../services/omdb-api.service.js";
-import appHeader from "../components//app-header/app-header.js";
+import appHeader from "../components/app-header/app-header.js";
 import listMovies from "./list-movies/list-movies.js";
 import mainSearch from "./main-search/main-search.js";
 import listSubheader from './list-subheader/list-subheader.js';
@@ -26,7 +26,9 @@ export default () => {
       const evt = new Event('movies.loaded');
       evt.data = data;
       document.dispatchEvent(evt)
-      pageElement.appendChild(listMovies(data.Search));
+      if(data.Response === "True") {
+        pageElement.appendChild(listMovies(data.Search));
+      }
     })
     .catch((err) => {
       alert(`Error obteniendo las peliculas: ${err.message}`)
@@ -36,3 +38,4 @@ export default () => {
   
   return wrapperElement;
 }
+

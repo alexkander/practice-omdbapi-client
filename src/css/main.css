@@ -23,6 +23,8 @@
 
   --app-header--height: 4rem;
   --app-button--hover-color: #dfdfdf;
+
+  --app-danger: rgb(184, 0, 0);
 }
 
 body{

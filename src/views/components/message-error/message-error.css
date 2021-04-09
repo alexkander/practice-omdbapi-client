@@ -1,0 +1,4 @@
+.message-error--wrapper{
+  font-weight: bold;
+  color: var(--app-danger);
+}
