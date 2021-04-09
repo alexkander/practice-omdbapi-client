@@ -12,7 +12,7 @@ export default () => {
   wrapperElement.classList.add('list-view--wrapper');
 
   const pageElement = document.createElement('section');
-  pageElement.classList.add('list-view--page', 'app-container');
+  pageElement.classList.add('app-page-body', 'app-container');
 
   wrapperElement.appendChild(appHeader());
   wrapperElement.appendChild(pageElement);
@@ -31,7 +31,7 @@ export default () => {
       }
     })
     .catch((err) => {
-      alert(`Error obteniendo las peliculas: ${err.message}`)
+      alert(`Error searching movies: ${err.message}`)
     });
   }
 

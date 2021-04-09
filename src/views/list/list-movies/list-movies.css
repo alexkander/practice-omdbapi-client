@@ -7,6 +7,10 @@
   margin-left: -1rem;
 }
 
+.list-movies-item--link{
+  width: 100%;
+}
+
 .list-movies-item--wrapper{
   padding: 1rem;
   width: 25%;

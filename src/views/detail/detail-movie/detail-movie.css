@@ -1,0 +1,19 @@
+.detail-movie--wrapper{
+  padding-top: 1rem;
+}
+
+.detail-movie--container{
+  display: flex;
+}
+
+.detail-movie--poster-container{
+  width: 300px;
+}
+
+.detail-movie--poster-img{
+  display: block;
+}
+
+.detail-movie--info-inner{
+  margin-left: 1rem;
+}

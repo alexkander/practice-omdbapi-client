@@ -1,6 +1,7 @@
 export default (dataMovie) => {
   const hasPoster = dataMovie.Poster !== 'N/A'
   const template = `
+  <a class="app-link list-movies-item--link" href="?imdbID=${dataMovie.imdbID}&view=detail">
   <div class="list-movies-item--card" title="${dataMovie.Title} (${dataMovie.Year})">
     <div class="app-image-background list-movies-item--poster"></div>
     <div class="list-movies-item--info">
@@ -11,6 +12,7 @@ export default (dataMovie) => {
       <p class="list-movies-item--info-type">${dataMovie.Type}</p>
     </div>
   </div>
+  </a>
   `
 
   const wrapperElement = document.createElement('div');
