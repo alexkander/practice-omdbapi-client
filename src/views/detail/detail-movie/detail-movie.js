@@ -7,27 +7,44 @@ export default (dataMovie) => {
     </div>
     <div class="detail-movie--info-wrapper">
       <div class="detail-movie--info-inner">
-        <h5 class="app-ellipsis">${dataMovie.Title} (${dataMovie.Year})</h5>
-        <p> <strong>Type</strong>: ${dataMovie.Type}</p>
-        <p> <strong>Actors</strong>: ${dataMovie.Actors}</p>
-        <p> <strong>Awards</strong>: ${dataMovie.Awards}</p>
-        <p> <strong>BoxOffice</strong>: ${dataMovie.BoxOffice}</p>
-        <p> <strong>Country</strong>: ${dataMovie.Country}</p>
-        <p> <strong>DVD</strong>: ${dataMovie.DVD}</p>
-        <p> <strong>Director</strong>: ${dataMovie.Director}</p>
-        <p> <strong>Genre</strong>: ${dataMovie.Genre}</p>
-        <p> <strong>Language</strong>: ${dataMovie.Language}</p>
-        <p> <strong>Metascore</strong>: ${dataMovie.Metascore}</p>
-        <p> <strong>Plot</strong>: ${dataMovie.Plot}</p>
-        <p> <strong>Production</strong>: ${dataMovie.Production}</p>
-        <p> <strong>Rated</strong>: ${dataMovie.Rated}</p>
-        <p> <strong>Ratings</strong>: ${dataMovie.Ratings}</p>
-        <p> <strong>Released</strong>: ${dataMovie.Released}</p>
-        <p> <strong>Runtime</strong>: ${dataMovie.Runtime}</p>
-        <p> <strong>Website</strong>: ${dataMovie.Website}</p>
-        <p> <strong>Writer</strong>: ${dataMovie.Writer}</p>
-        <p> <strong>imdbRating</strong>: ${dataMovie.imdbRating}</p>
-        <p> <strong>imdbVotes</strong>: ${dataMovie.imdbVotes}</p>
+        <h5 class="detail-movie--title-wrapper">
+          <strong class="detail-movie--title">${dataMovie.Title}</strong>
+          <span class="detail-movie--year-duration">(${dataMovie.Year}) - ${dataMovie.Runtime}</span>
+        </h5>
+        <div class="detail-movie--rating-wrapper">
+          <i class="detail-movie--rating-icon fas fa-star"></i>
+          <span>${dataMovie.imdbRating}/10</span>
+          <small>(${dataMovie.imdbVotes} votes)</small>
+        </div>
+        <p class="detail-movie--info-item"><small>${dataMovie.Genre}</small></p>
+        <hr>
+        <p class="detail-movie--info-item"><strong>Actors</strong>: ${dataMovie.Actors}</p>
+        <p class="detail-movie--info-item"><strong>Writer</strong>: ${dataMovie.Writer}</p>
+        <p class="detail-movie--info-item"><strong>Production</strong>: ${dataMovie.Production}</p>
+        <p class="detail-movie--info-item"><strong>Director</strong>: ${dataMovie.Director}</p>
+        <p class="detail-movie--info-item"><strong>Country</strong>: ${dataMovie.Country}</p>
+        <p class="detail-movie--info-item"><strong>Rated</strong>: ${dataMovie.Rated}</p>
+        <p class="detail-movie--info-item"><strong>Language</strong>: ${dataMovie.Language}</p>
+        <p class="detail-movie--info-item"><strong>Awards</strong>: ${dataMovie.Awards}</p>
+        <p class="detail-movie--info-item"><strong>BoxOffice</strong>: ${dataMovie.BoxOffice}</p>
+        <p class="detail-movie--info-item"><strong>Released</strong>: ${dataMovie.Released}</p>
+        <p class="detail-movie--info-item"><strong>DVD</strong>: ${dataMovie.DVD}</p>
+        <p class="detail-movie--info-item"><strong>Website</strong>: ${dataMovie.Website}</p>
+        <p class="detail-movie--info-item"><strong>Metascore</strong>: ${dataMovie.Metascore}</p>
+        <hr>
+        <p class="detail-movie--info-item"><strong>Plot</strong>: ${dataMovie.Plot}</p>
+        <hr>
+        <div class="detail-movie--ratings-wrapper">
+          <div>
+            <div class="detail-movie--ratings-title">Ratings</div>
+            ${dataMovie.Ratings.map((rating) =>
+              `<div class="detail-movie--ratings-item">
+                <span class="detail-movie--ratings-item--source">${rating.Source}</span>
+                <strong>${rating.Value}</strong>
+              </div>`
+            ).join('')}
+          </div>
+        <div>
       </div>
     </div>
   </div>

@@ -4,7 +4,7 @@ export default () => {
   const template = `
     <div class="app-container">
       <div class="page-header--container app-vertical-spacer">
-        <a class="page-header--app-name app-link" href="/" title="Go to home">
+        <a class="page-header--app-name app-link" href="./" title="Go to home">
           OMDb API Client
         </a>
         <div class="page-header--search"></div>
