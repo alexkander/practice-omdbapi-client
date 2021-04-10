@@ -3,22 +3,22 @@
   display: flex;
   align-items: center;
   border: 1px solid var(--primary-color);
-  box-shadow: 0.0rem 0.0rem 0.5rem var(--primary-color-200);
+  box-shadow: 0.0px 0.0px 0.2rem #00000030;
 }
 
 .input-search--wrapper:focus-within{
-  box-shadow: 0.0rem 0.0rem 0.5rem var(--primary-color-700);
+  box-shadow: 0.0px 0.0px 1rem #00000030;
 }
 
 .input-search--input{
   border: none;
   outline:none;
-  background-color: transparent;
   padding: 0;
+  background-color: transparent;
+  color: inherit;
 }
 
 .input-search--search-icon{
   cursor: pointer;
   margin-left: 0.8rem;
-  color: var(--secondary-text-color);
 }

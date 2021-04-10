@@ -14,8 +14,8 @@ const searchMovies = (searchText) =>{
   return apiGet(`s=${searchText}`);
 }
 
-const searchMovieById = (imdbId) =>{
-  return apiGet(`i=${imdbId}`);
+const searchMovieById = (imdbId, plot = 'full') =>{
+  return apiGet(`i=${imdbId}&plot=${plot}`);
 }
 
 export default {

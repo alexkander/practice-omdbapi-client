@@ -1,4 +1,3 @@
-import inputSearch from '../input-search/input-search.js';
 import messageError from "../../components/message-error/message-error.js";
 
 export default () => {
@@ -10,8 +9,6 @@ export default () => {
   wrapperElement.innerHTML = template;
 
   const messageElement = wrapperElement.querySelector('.list-subheader--message');
-
-  wrapperElement.appendChild(inputSearch());
 
   const updateMatches = (evt) => {
     evt.preventDefault();
