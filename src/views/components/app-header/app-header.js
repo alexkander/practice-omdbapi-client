@@ -1,4 +1,4 @@
-import inputSearch from '../../list/input-search/input-search.js';
+import inputSearch from '../input-search/input-search.js';
 
 export default () => {
   const template = `

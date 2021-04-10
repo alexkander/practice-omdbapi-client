@@ -1,0 +1,18 @@
+:root{
+  --pagination-button--size: 1.8rem;
+}
+
+.pagination-button--active{
+  font-weight: bold;
+}
+
+.pagination-button--wrapper{
+  display: inline-block;
+  font-size: 0.7rem;
+  line-height: var(--pagination-button--size);
+  width: var(--pagination-button--size);
+  height: var(--pagination-button--size);
+  text-align: center;
+  background-color: var(--secondary-bg-color);
+  margin:1px;
+}

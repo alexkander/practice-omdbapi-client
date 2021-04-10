@@ -7,11 +7,10 @@ const apiGet = (query) => {
     console.log('data', data);
     return data;
   });
-
 }
 
-const searchMovies = (searchText) =>{
-  return apiGet(`s=${searchText}`);
+const searchMovies = (searchText, page) =>{
+  return apiGet(`s=${searchText}&page=${page}`);
 }
 
 const searchMovieById = (imdbId, plot = 'full') =>{

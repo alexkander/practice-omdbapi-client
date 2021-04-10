@@ -4,15 +4,14 @@ export default () => {
     <i class="input-search--search-icon fas fa-search"></i>
   `;
   const wrapperElement = document.createElement('form');
-  wrapperElement.classList.add('input-search--wrapper')
+  wrapperElement.classList.add('input-search--wrapper');
   wrapperElement.innerHTML = template;
   const searchInputElement = wrapperElement.querySelector('.input-search--input');
 
   const makeSearch =  (evt) => {
     evt.preventDefault();
     const searchText = searchInputElement.value;
-    console.log('searchText', searchText);
-    location.href = '?s=' + searchText;
+    location.href = `?s=${encodeURI(searchText)}`;
     return false;
   }
   
