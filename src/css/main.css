@@ -23,10 +23,12 @@
   --secondary-text-color: #787878;
   --secondary-bg-color: #efefef;
 
-  --page-header--height: 4rem;
   --app-button--hover-color: #dfdfdf;
 
   --app-danger: rgb(184, 0, 0);
+
+  --page-header--height: 4rem;
+  --page-footer--height: 3rem;
 }
 
 body{
@@ -78,8 +80,6 @@ body{
   text-overflow: ellipsis;
 }
 
-.app-page-body{
-  padding: var(--page-header--height) var(--spacer) 2rem var(--spacer);
-  min-height: 100vh;
-  position: relative;
+.app-vertical-spacer{
+  padding: 0 var(--spacer);
 }

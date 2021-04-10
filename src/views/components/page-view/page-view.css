@@ -1,0 +1,9 @@
+.page-view--body{
+  padding: var(--page-header--height) 0 var(--page-footer--height) 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+.page-view--container{
+  padding-bottom: var(--spacer);
+}

@@ -1,7 +1,6 @@
 .page-header--wrapper{
   position: fixed;
   width: 100%;
-  height: var(--page-header--height);
   background-color: var(--primary-color);
   color: var(--primary-color-text);
   box-shadow: 0.05rem 0.05rem 0.3rem var(--shadow-color);
@@ -12,8 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 4rem;
-  padding: 0 var(--spacer);
+  min-height: var(--page-header--height);
 }
 
 .page-header--app-name{
@@ -22,11 +20,6 @@
 
 .page-header--app-name:hover{
   text-decoration: none;
-}
-
-.page-header--github-link{
-  display: flex;
-  align-items: center;
 }
 
 .page-header--github-icon{

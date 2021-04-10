@@ -1,5 +1,5 @@
 # Practice: OMDb Api client
-Practice with [OMDb API](https://www.omdbapi.com/) for create a client
+Practice with [OMDb API](https://www.omdbapi.com) for create a client
 
 # Live app
 [Live app](https://alexkander.github.io/practice-omdbapi-client/)
