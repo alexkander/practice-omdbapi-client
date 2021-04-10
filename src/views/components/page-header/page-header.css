@@ -1,14 +1,14 @@
-.app-header--wrapper{
+.page-header--wrapper{
   position: fixed;
   width: 100%;
-  height: var(--app-header--height);
+  height: var(--page-header--height);
   background-color: var(--primary-color);
   color: var(--primary-color-text);
   box-shadow: 0.05rem 0.05rem 0.3rem var(--shadow-color);
   z-index: 1;
 }
 
-.app-header--container{
+.page-header--container{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,30 +16,30 @@
   padding: 0 var(--spacer);
 }
 
-.app-header--app-name{
+.page-header--app-name{
   font-size: 2rem;
 }
 
-.app-header--app-name:hover{
+.page-header--app-name:hover{
   text-decoration: none;
 }
 
-.app-header--github-link{
+.page-header--github-link{
   display: flex;
   align-items: center;
 }
 
-.app-header--github-icon{
+.page-header--github-icon{
   font-size: 1.2rem;
   padding-right: 0.4rem;
 }
 
-.app-header--search .input-search--wrapper{
+.page-header--search .input-search--wrapper{
   padding: 0.6rem 0.8rem;
   background-color: #ffffff1a;
 }
 
-.app-header--search .input-search--search-icon,
-.app-header--search .input-search--input::placeholder{
+.page-header--search .input-search--search-icon,
+.page-header--search .input-search--input::placeholder{
   color: #ffffff88;
 }

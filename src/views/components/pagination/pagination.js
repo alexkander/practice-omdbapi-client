@@ -11,8 +11,6 @@ export default (totalResults) => {
   const firstButtonPage = Math.max(1, currentPage - parseInt(cantPageButtons/2));
   const lastButtonPage = Math.min(numbersPages, firstButtonPage + cantPageButtons-1);
 
-  console.log('numbersPages', firstButtonPage, numbersPages, totalResults/pageSize);
-
   const wrapperElement = document.createElement('div');
   wrapperElement.classList.add('pagination--wrapper');
 

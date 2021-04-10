@@ -23,7 +23,7 @@
   --secondary-text-color: #787878;
   --secondary-bg-color: #efefef;
 
-  --app-header--height: 4rem;
+  --page-header--height: 4rem;
   --app-button--hover-color: #dfdfdf;
 
   --app-danger: rgb(184, 0, 0);
@@ -79,7 +79,7 @@ body{
 }
 
 .app-page-body{
-  padding: var(--app-header--height) var(--spacer) 2rem var(--spacer);
+  padding: var(--page-header--height) var(--spacer) 2rem var(--spacer);
   min-height: 100vh;
   position: relative;
 }

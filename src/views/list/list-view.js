@@ -1,5 +1,5 @@
 import omdbApi from "../../services/omdb-api.service.js";
-import appHeader from "../components/app-header/app-header.js";
+import appHeader from "../components/page-header/page-header.js";
 import pagination from "../components/pagination/pagination.js";
 import listMovies from "./list-movies/list-movies.js";
 import mainSearch from "./main-search/main-search.js";

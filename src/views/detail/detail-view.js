@@ -1,5 +1,5 @@
 import omdbApi from "../../services/omdb-api.service.js";
-import appHeader from "../components/app-header/app-header.js";
+import appHeader from "../components/page-header/page-header.js";
 import detailMovie from './detail-movie/detail-movie.js'
 
 export default () => {

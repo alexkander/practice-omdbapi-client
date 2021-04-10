@@ -2,28 +2,28 @@ import inputSearch from '../input-search/input-search.js';
 
 export default () => {
   const template = `
-    <div class="app-container app-header--container">
-      <a class="app-header--app-name app-link" href="/" title="Go to home">
+    <div class="app-container page-header--container">
+      <a class="page-header--app-name app-link" href="/" title="Go to home">
         OMDb API Client
       </a>
-      <div class="app-header--search"></div>
+      <div class="page-header--search"></div>
     </div>
   `
   // <div>
   //   <a
-  //     class="app-header--github-link app-link"
+  //     class="page-header--github-link app-link"
   //     href="https://github.com/alexkander/practice-omdbapi-client"
   //     target="_blank"
   //   >
-  //     <i class="app-header--github-icon fab fa-github"></i>
+  //     <i class="page-header--github-icon fab fa-github"></i>
   //     <span>Go github</span>
   //   </a>
   // </div>
   const wrapperElement = document.createElement('section');
-  wrapperElement.classList.add('app-header--wrapper')
+  wrapperElement.classList.add('page-header--wrapper')
   wrapperElement.innerHTML = template;
 
-  const searchContainer = wrapperElement.querySelector('.app-header--search');
+  const searchContainer = wrapperElement.querySelector('.page-header--search');
   searchContainer.appendChild(inputSearch());
   return wrapperElement;
 }
