@@ -3,8 +3,9 @@
   justify-content: stretch;
   flex-wrap: wrap;
   /* equal to padding in .list-movies-item--wrapper*/
-  margin-right: -1rem;
-  margin-left: -1rem;
+  margin-top: calc(var(--spacer) * 2);
+  margin-right: calc((-1 * var(--spacer)) / 2);
+  margin-left: calc((-1 * var(--spacer)) / 2);
 }
 
 .list-movies-item--link{
@@ -12,14 +13,40 @@
 }
 
 .list-movies-item--wrapper{
-  padding: 1rem;
-  width: 25%;
+  padding: var(--spacer);
+  width: 100%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .list-movies-item--wrapper{
+    width: 50%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .list-movies-item--wrapper{
+    width: 33.33%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .list-movies-item--wrapper{
+    width: 25%;
+  }
 }
 
 .list-movies-item--card{
   box-shadow: 0.05rem 0.05rem 0.3rem var(--shadow-color);
   border-radius: 0.3rem;
   overflow: hidden;
+  display: flex;
+}
+
+.list-movies-item--poster-container{
+  width: 35%;
 }
 
 .list-movies-item--poster{
@@ -45,6 +72,7 @@
 .list-movies-item--info{
   padding: 0.8rem 1rem;
   background-color: var(--secondary-bg-color);
+  width: 66%;
 }
 
 .list-movies-item--info-line{
@@ -63,4 +91,15 @@
 
 .list-movies-item--info-type{
   color: var(--secondary-text-color)
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .list-movies-item--card{
+    display: block;
+  }
+  .list-movies-item--poster-container,
+  .list-movies-item--info{
+    width: 100%;
+  }
 }

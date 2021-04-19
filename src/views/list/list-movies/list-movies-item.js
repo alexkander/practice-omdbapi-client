@@ -2,16 +2,18 @@ export default (dataMovie) => {
   const hasPoster = dataMovie.Poster !== 'N/A'
   const template = `
   <a class="app-link list-movies-item--link" href="?imdbID=${dataMovie.imdbID}&view=detail">
-  <div class="list-movies-item--card" title="${dataMovie.Title} (${dataMovie.Year})">
-    <div class="app-image-background list-movies-item--poster"></div>
-    <div class="list-movies-item--info">
-      <div class="list-movies-item--info-line">
-        <h5 class="list-movies-item--info-title app-ellipsis">${dataMovie.Title}</h5>
-        <p class="list-movies-item--info-year">${dataMovie.Year}</p>
+    <div class="list-movies-item--card" title="${dataMovie.Title} (${dataMovie.Year})">
+      <div class="list-movies-item--poster-container">
+        <div class="app-image-background list-movies-item--poster"></div>
       </div>
-      <p class="list-movies-item--info-type">${dataMovie.Type}</p>
+      <div class="list-movies-item--info">
+        <div class="list-movies-item--info-line">
+          <h5 class="list-movies-item--info-title app-ellipsis">${dataMovie.Title}</h5>
+          <p class="list-movies-item--info-year">${dataMovie.Year}</p>
+        </div>
+        <p class="list-movies-item--info-type">${dataMovie.Type}</p>
+      </div>
     </div>
-  </div>
   </a>
   `
 

@@ -2,16 +2,18 @@
   padding-top: 1rem;
 }
 
-.detail-movie--container{
-  display: flex;
-}
-
-.detail-movie--poster-container{
-  width: 300px;
-}
-
 .detail-movie--poster-img{
   display: block;
+  margin: 0 auto calc(var(--spacer) * 2) auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .detail-movie--container{
+    display: flex;
+  }
+  .detail-movie--poster-container{
+    width: 300px;
+  }
 }
 
 .detail-movie--info-inner{

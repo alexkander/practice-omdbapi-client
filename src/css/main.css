@@ -28,6 +28,7 @@
   --app-danger: rgb(184, 0, 0);
 
   --page-header--height: 4rem;
+  --page-header--height-sm: calc(var(--page-header--height) * 1.5);
   --page-footer--height: 3rem;
 }
 
@@ -66,7 +67,34 @@ body{
 
 .app-container{
   margin: 0 auto;
-  max-width: 1320px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .app-container{
+    max-width: 560px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .app-container{
+    max-width: 720px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .app-container{
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .app-container{
+    max-width: 1160px;
+  }
 }
 
 .app-image-background{

@@ -8,10 +8,21 @@
 }
 
 .page-header--container{
+  min-height: var(--page-header--height-sm);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: var(--page-header--height);
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .page-header--container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: var(--page-header--height);
+  }
 }
 
 .page-header--app-name{
