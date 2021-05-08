@@ -1,0 +1,12 @@
+@import './css/reset.css';
+@import './css/main.css';
+@import './views/components/page-header/page-header.css';
+@import './views/components/page-footer/page-footer.css';
+@import './views/components/page-view/page-view.css';
+@import './views/components/message-error/message-error.css';
+@import './views/components/input-search/input-search.css';
+@import './views/components/pagination/pagination.css';
+@import './views/list/list-subheader/list-subheader.css';
+@import './views/list/list-movies/list-movies.css';
+@import './views/list/main-search/main-search.css';
+@import './views/detail/detail-movie/detail-movie.css';

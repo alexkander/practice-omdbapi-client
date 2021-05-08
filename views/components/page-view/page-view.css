@@ -1,0 +1,16 @@
+.page-view--body{
+  padding: var(--page-header--height-sm) 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .page-view--body{
+    padding: var(--page-header--height) 0;
+  }
+}
+
+.page-view--container{
+  padding-bottom: var(--spacer);
+}

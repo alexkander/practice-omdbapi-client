@@ -1,0 +1,105 @@
+.list-movies--wrapper{
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  /* equal to padding in .list-movies-item--wrapper*/
+  margin-top: calc(var(--spacer) * 2);
+  margin-right: calc((-1 * var(--spacer)) / 2);
+  margin-left: calc((-1 * var(--spacer)) / 2);
+}
+
+.list-movies-item--link{
+  width: 100%;
+}
+
+.list-movies-item--wrapper{
+  padding: var(--spacer);
+  width: 100%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .list-movies-item--wrapper{
+    width: 50%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .list-movies-item--wrapper{
+    width: 33.33%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .list-movies-item--wrapper{
+    width: 25%;
+  }
+}
+
+.list-movies-item--card{
+  box-shadow: 0.05rem 0.05rem 0.3rem var(--shadow-color);
+  border-radius: 0.3rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.list-movies-item--poster-container{
+  width: 35%;
+}
+
+.list-movies-item--poster{
+  padding-top: 150%; /* Aspect ratio 4/3 */
+  position: relative;
+}
+
+.list-movies-item--no-poster{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bfbfbf;
+  color: var(--secondary-bg-color);
+  font-size: 10rem;
+  text-shadow: 1px 1px 1px #8f8f8f;
+}
+
+.list-movies-item--info{
+  padding: 0.8rem 1rem;
+  background-color: var(--secondary-bg-color);
+  width: 66%;
+}
+
+.list-movies-item--info-line{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+
+.list-movies-item--info-title{
+  font-weight: bold;
+}
+
+.list-movies-item--info-year{
+  padding-left: 0.5rem;
+}
+
+.list-movies-item--info-type{
+  color: var(--secondary-text-color)
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .list-movies-item--card{
+    display: block;
+  }
+  .list-movies-item--poster-container,
+  .list-movies-item--info{
+    width: 100%;
+  }
+}

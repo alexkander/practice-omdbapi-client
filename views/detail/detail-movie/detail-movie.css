@@ -1,0 +1,69 @@
+.detail-movie--wrapper{
+  padding-top: 1rem;
+}
+
+.detail-movie--poster-img{
+  display: block;
+  margin: 0 auto calc(var(--spacer) * 2) auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .detail-movie--container{
+    display: flex;
+  }
+  .detail-movie--poster-container{
+    width: 300px;
+  }
+}
+
+.detail-movie--info-inner{
+  margin-left: 1rem;
+}
+
+.detail-movie--info-item{
+  margin-bottom: 0.5rem;
+}
+
+.detail-movie--title-wrapper{
+  margin-bottom: 1rem;
+}
+
+.detail-movie--title{
+  font-size: 2rem;
+}
+
+.detail-movie--year-duration{
+  margin-left: 0.5rem;
+  color: var(--secondary-text-color);
+}
+
+.detail-movie--rating-wrapper{
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.detail-movie--rating-icon{
+  color: gold;
+}
+
+.detail-movie--ratings-wrapper{
+  display: flex;
+}
+
+.detail-movie--ratings-item,
+.detail-movie--ratings-title{
+  margin-bottom: 0.5rem;
+}
+
+.detail-movie--ratings-title{
+  font-weight: bold;
+}
+
+.detail-movie--ratings-item{
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-movie--ratings-item--source{
+  margin-right: 1rem;
+}

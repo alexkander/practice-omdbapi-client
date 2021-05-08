@@ -1,0 +1,19 @@
+.page-footer--wrapper{
+  position: relative;
+  z-index: 1;
+  background-color: var(--primary-color-300);
+  color: var(--primary-color-text);
+  margin-top: -3rem;
+}
+
+.page-footer-link{
+  display: flex;
+  align-items: center;
+}
+
+.page-footer--container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: var(--page-footer--height);
+}

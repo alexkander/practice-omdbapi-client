@@ -1,0 +1,49 @@
+.page-header--wrapper{
+  position: fixed;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--primary-color-text);
+  box-shadow: 0.05rem 0.05rem 0.3rem var(--shadow-color);
+  z-index: 1;
+}
+
+.page-header--container{
+  min-height: var(--page-header--height-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .page-header--container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: var(--page-header--height);
+  }
+}
+
+.page-header--app-name{
+  font-size: 2rem;
+}
+
+.page-header--app-name:hover{
+  text-decoration: none;
+}
+
+.page-header--github-icon{
+  font-size: 1.2rem;
+  padding-right: 0.4rem;
+}
+
+.page-header--search .input-search--wrapper{
+  padding: 0.6rem 0.8rem;
+  background-color: #ffffff1a;
+}
+
+.page-header--search .input-search--search-icon,
+.page-header--search .input-search--input::placeholder{
+  color: #ffffff88;
+}

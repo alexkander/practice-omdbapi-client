@@ -1,0 +1,22 @@
+.main-search--wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.main-search--title{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.main-search--wrapper .input-search--wrapper{
+  font-size: 2rem;
+  padding: 1.2rem 1.8rem;
+}
+
+.main-search--wrapper .input-search--search-icon,
+.main-search--wrapper .input-search--input::placeholder{
+  color: #888888;
+}
+

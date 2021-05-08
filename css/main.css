@@ -1,0 +1,113 @@
+:root{
+  --primary-color-50: #E8EAF6;
+  --primary-color-100: #C5CAE9;
+  --primary-color-200: #9FA8DA;
+  --primary-color-300: #7986CB;
+  --primary-color-400: #5C6BC0;
+  --primary-color-500: #3F51B5;
+  --primary-color-600: #3949AB;
+  --primary-color-700: #303F9F;
+  --primary-color-800: #283593;
+  --primary-color-900: #1A237E;
+  --primary-color-A100: #8C9EFF;
+  --primary-color-A200: #536DFE;
+  --primary-color-A400: #3D5AFE;
+  --primary-color-A700: #304FFE;
+  --primary-color-text: #fff;
+
+  --spacer: 0.5rem;
+
+  --primary-color: var(--primary-color-500);
+  --shadow-color: rgba(0,0,0,.45);
+  --text-color: #131516;
+  --secondary-text-color: #787878;
+  --secondary-bg-color: #efefef;
+
+  --app-button--hover-color: #dfdfdf;
+
+  --app-danger: rgb(184, 0, 0);
+
+  --page-header--height: 4rem;
+  --page-header--height-sm: calc(var(--page-header--height) * 1.5);
+  --page-footer--height: 3rem;
+}
+
+body{
+  line-height: 1.2;
+  font-size: 16px;
+  color: var(--text-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app-link{
+  color: inherit;
+  /* padding: 0.4rem 0.8rem; */
+  text-decoration: none;
+  display: inline-block;
+}
+
+.app-link:hover{
+  text-decoration: underline;
+}
+
+.app-button{
+  padding: 0.4rem 0.8rem;
+  border-radius: 3px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.app-button:hover{
+  background-color: var(--app-button--hover-color);
+}
+
+.app-button-border{
+  border: 1px solid var(--text-color);
+}
+
+.app-container{
+  margin: 0 auto;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .app-container{
+    max-width: 560px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .app-container{
+    max-width: 720px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .app-container{
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .app-container{
+    max-width: 1160px;
+  }
+}
+
+.app-image-background{
+  background-size: cover;
+  background-position: center;
+}
+
+.app-ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.app-vertical-spacer{
+  padding: 0 var(--spacer);
+}
