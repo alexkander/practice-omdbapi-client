@@ -16,3 +16,8 @@ npm install
 ```sh
 npm start
 ```
+
+## Deploy
+```sh
+npm run deploy
+```
